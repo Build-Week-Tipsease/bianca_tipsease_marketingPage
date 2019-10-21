@@ -133,10 +133,6 @@ table {
 html {
   font-size: 62.5%;
 }
-body {
-  margin: 0 auto;
-  width: 80%;
-}
 h1,
 h2,
 h3,
@@ -167,6 +163,20 @@ a {
 }
 a:hover {
   color: black;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2vh 0;
+}
+nav .logo {
+  width: 200px;
+}
+nav .nav-bar a {
+  padding-left: 3vh;
 }
 @font-face {
   font-family: 'Open Sans';
