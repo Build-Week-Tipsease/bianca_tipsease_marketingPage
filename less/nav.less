@@ -2,13 +2,65 @@ nav {
     .flex(row, space-between, center);
     padding: 2vh 0;
 
+    @media @tablet {
+        .flex();
+    }
+
+    @media @phone {
+        padding-bottom: 0;
+    }
+
     .logo {
         width: 200px;
+
+        @media @tablet {
+            width: 300px;
+        }
+
+        @media @phone {
+            display: none;
+        }
+    }
+
+    .icon {
+        display: none;
+
+        @media @phone {
+            display: inline-block;
+            width: 50px;
+            padding-bottom: 2vh;
+        }
     }
 
     .nav-bar {
+        @media @tablet {
+            .flex(row, space-around, center);
+            width: 100%;
+        }
+
+        @media @phone {
+            .flex();
+            margin-bottom: 2vh;
+            border-bottom: 1px solid @main-color;
+        }
+
         a {
             padding-left: 3vh;
+            font-weight: bold;
+            text-transform: lowercase;
+
+            @media @tablet {
+                padding-left: 0;
+                padding-top: 2vh;
+            }
+
+            @media @phone {
+                width: 100%;
+                padding-bottom: 2vh;
+                background-color: @sub-color;
+                border-top: 1px solid @main-color;
+                text-align: center;                
+            }
         }
     }
 }

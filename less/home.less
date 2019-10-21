@@ -3,9 +3,19 @@ header {
         .flex(column, center, flex-start);
         height: 500px;
         width: 100%;
-        background-image: url("../img/cta.png");
-        background-position: right center;
+        background-image: url("../img/cta.jpg");
+        background-position: center;
         padding: 5%;
+
+        @media @tablet {
+            .flex();            
+        }
+
+        @media @phone {
+            height: 300px;
+            background-image: none;
+            background-color: @main-color;
+        }        
 
         h1, h2 {
             margin-bottom: 15px;
@@ -13,17 +23,34 @@ header {
             text-transform: lowercase;
         }
 
+        h1 {
+            @media @small-phone {
+                font-size: 7rem;
+            }
+        }
+
         button {
             border: none;
-            background-color: @sub-color;
+            color: @sub-color;
+            background-color: @main-color;            
             padding: 1rem;
             border-radius: 5px;
             width: 20rem;
             font-size: 1.8rem;
 
+            @media @phone {
+                color: @main-color;
+                background-color: @sub-color;
+            }
+
             &:hover {
-                color: @sub-color;
-                background-color: @main-color;
+                color: @main-color;
+                background-color: @sub-color;
+
+                @media @phone {
+                    color: @sub-color;
+                    background-color: @main-color;
+                }
             }
         }
     }
@@ -33,16 +60,34 @@ header {
     .flex(row, space-between, flex-start);
     padding: 3vh 0 5vh;
 
+    @media @tablet {
+        .flex(column, center, flex-start);
+    }
+
+    @media @phone {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .about {
         width: 48%;
+
+        @media @tablet {
+            width: 100%;
+        }
         
         p {
             padding-top: 1.5vh;
-            line-height: 2rem;
+            line-height: 2.5rem;
         }
     }
 
     .features {
-        width: 48%;        
+        width: 48%;     
+        
+        @media @tablet {
+            width: 100%;
+            padding-top: 2vh;
+        }
     }
 }

@@ -7,8 +7,16 @@ html {
     font-size: 62.5%;
 }
 
-nav, header, section, footer {
-    .desktop-width();
+body {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    @media @phone {
+        width: 100%;
+    }
 }
 
 ul {
@@ -19,7 +27,7 @@ ul {
     line-height: 2.5rem;
 }
 
-h1, h2, h3, button {
+h1, h2, h3, h4, button {
     font-family: 'Open Sans', sans-serif;
     color: @main-color;
     font-weight: bold;
@@ -37,7 +45,11 @@ h3 {
     font-size: 2.5rem;
 }
 
-p, a, li {
+h4 {
+    font-size: 1.6rem;
+}
+
+p, a, li, address {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
     color: @text-color;
