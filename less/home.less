@@ -3,19 +3,19 @@ header {
         .flex(column, center, flex-start);
         height: 500px;
         width: 100%;
-        background-image: url("../img/cta.png");
-        background-position: right center;
+        background-image: url("../img/cta.jpg");
+        background-position: center;
         padding: 5%;
+
+        @media @tablet {
+            .flex();            
+        }
 
         @media @phone {
             height: 300px;
-        }
-
-        @media @tablet {
-            .flex();
             background-image: none;
             background-color: @main-color;
-        }
+        }        
 
         h1, h2 {
             margin-bottom: 15px;
