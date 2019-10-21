@@ -23,6 +23,12 @@ header {
             text-transform: lowercase;
         }
 
+        h1 {
+            @media @small-phone {
+                font-size: 7rem;
+            }
+        }
+
         button {
             border: none;
             background-color: @sub-color;
@@ -45,6 +51,11 @@ header {
 
     @media @tablet {
         .flex(column, center, flex-start);
+    }
+
+    @media @phone {
+        width: 90%;
+        margin: 0 auto;
     }
 
     .about {

@@ -2,6 +2,11 @@
     padding: 3vh 0 5vh;
     .flex(row, space-around, flex-start);
     flex-wrap: wrap;
+
+    @media @phone {
+        width: 90%;
+        margin: 0 auto;
+    }
     
     .how-it-works {
         width: 100%;
@@ -23,5 +28,10 @@
         border-radius: 5px;
         padding: 20px;
         background-color: @sub-color;
+
+        @media @tablet {
+            width: 100%;
+            margin-bottom: 3vh;
+        }
     }
 }
