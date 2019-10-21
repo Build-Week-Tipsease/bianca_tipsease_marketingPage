@@ -1,16 +1,21 @@
+header {    
+    .about-banner {
+        @media @phone {
+            display: none;
+        }
+    }
+}
+
 .about-page {
-    padding: 3vh 0 5vh;
-    .flex(row, space-around, flex-start);
-    flex-wrap: wrap;
+    padding: 3vh 0 5vh;    
 
     @media @phone {
-        width: 90%;
-        margin: 0 auto;
-    }
+        padding: 0 0 5vh;
+    }    
     
-    .how-it-works {
+    .about-us {
         width: 100%;
-        padding-bottom: 3vh;
+        padding: 3vh;
         
         h2 {
             padding-bottom: 1.5vh
@@ -19,6 +24,19 @@
         p {
             line-height: 2rem;
         }
+
+        @media @phone {
+            width: 90%;
+            margin: 0 auto;
+            padding: 1vh 0 3vh;
+        }
+    }
+
+    .boxes {
+        .flex(row, space-around, flex-start);
+        flex-wrap: wrap;
+        background-color: @sub-color;
+        padding-top: 3vh;
     }
 
     .about-info {
@@ -29,10 +47,20 @@
         border-radius: 5px;
         padding: 20px;
         margin-bottom: 3vh;
-        background-color: @sub-color;
+        background-color: white;
 
         @media @tablet {
-            width: 100%;            
+            width: 45%;            
+        }
+
+        @media @small-tablet{
+            width: 90%;
+        }
+
+        h3 {
+            @media @tablet {
+                font-size: 2rem;            
+            }
         }
 
         p {

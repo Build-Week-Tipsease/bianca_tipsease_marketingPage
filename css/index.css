@@ -365,29 +365,44 @@ header .cta button:hover {
     padding-top: 2vh;
   }
 }
+@media (max-width: 450px) {
+  header .about-banner {
+    display: none;
+  }
+}
 .about-page {
   padding: 3vh 0 5vh;
+}
+@media (max-width: 450px) {
+  .about-page {
+    padding: 0 0 5vh;
+  }
+}
+.about-page .about-us {
+  width: 100%;
+  padding: 3vh;
+}
+.about-page .about-us h2 {
+  padding-bottom: 1.5vh;
+}
+.about-page .about-us p {
+  line-height: 2rem;
+}
+@media (max-width: 450px) {
+  .about-page .about-us {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1vh 0 3vh;
+  }
+}
+.about-page .boxes {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-}
-@media (max-width: 450px) {
-  .about-page {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-.about-page .how-it-works {
-  width: 100%;
-  padding-bottom: 3vh;
-}
-.about-page .how-it-works h2 {
-  padding-bottom: 1.5vh;
-}
-.about-page .how-it-works p {
-  line-height: 2rem;
+  background-color: #CCFFCC;
+  padding-top: 3vh;
 }
 .about-page .about-info {
   display: flex;
@@ -400,11 +415,21 @@ header .cta button:hover {
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 3vh;
-  background-color: #CCFFCC;
+  background-color: white;
 }
 @media (max-width: 800px) {
   .about-page .about-info {
-    width: 100%;
+    width: 45%;
+  }
+}
+@media (max-width: 650px) {
+  .about-page .about-info {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .about-page .about-info h3 {
+    font-size: 2rem;
   }
 }
 .about-page .about-info p {
