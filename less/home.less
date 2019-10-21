@@ -1,0 +1,59 @@
+header {
+    .desktop-width();
+    height: 500px;
+    background-image: url("../img/cta.png");
+    background-position: right center;
+    .flex(row, flex-left, center);
+
+    .cta {
+        .flex();
+        padding: 5%;
+
+        h1, h2 {
+            margin-bottom: 15px;
+            color: @sub-color;
+            text-transform: lowercase;
+        }
+
+        button {
+            border: none;
+            background-color: @sub-color;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 20rem;
+            font-size: 1.8rem;
+
+            &:hover {
+                color: @sub-color;
+                background-color: @main-color;
+            }
+        }
+    }
+}
+
+section {
+    .desktop-width();
+    .flex(row, space-between, flex-start);
+    padding: 3vh 0 5vh;
+
+    .about {
+        width: 48%;
+        
+        p {
+            padding-top: 1.5vh;
+            line-height: 2rem;
+        }
+    }
+
+    .features {
+        width: 48%;
+
+        ul {
+            padding-top: 1.5vh;
+            list-style-type: circle;
+            list-style-position: inside;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+    }
+}

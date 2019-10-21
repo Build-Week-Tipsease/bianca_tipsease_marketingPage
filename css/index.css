@@ -142,10 +142,10 @@ button {
   font-weight: bold;
 }
 h1 {
-  font-size: 7rem;
+  font-size: 8rem;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h3 {
   font-size: 2.5rem;
@@ -166,9 +166,11 @@ a:hover {
 }
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2vh 0;
 }
@@ -177,6 +179,79 @@ nav .logo {
 }
 nav .nav-bar a {
   padding-left: 3vh;
+}
+footer {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 500px;
+  background-image: url("../img/cta.png");
+  background-position: right center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-left;
+  align-items: center;
+}
+header .cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+header .cta h1,
+header .cta h2 {
+  margin-bottom: 15px;
+  color: white;
+  text-transform: lowercase;
+}
+header .cta button {
+  border: none;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 20rem;
+  font-size: 1.8rem;
+}
+header .cta button:hover {
+  color: white;
+  background-color: #14684E;
+}
+section {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3vh 0 5vh;
+}
+section .about {
+  width: 48%;
+}
+section .about p {
+  padding-top: 1.5vh;
+  line-height: 2rem;
+}
+section .features {
+  width: 48%;
+}
+section .features ul {
+  padding-top: 1.5vh;
+  list-style-type: circle;
+  list-style-position: inside;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
 }
 @font-face {
   font-family: 'Open Sans';
