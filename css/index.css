@@ -318,15 +318,28 @@ header .cta h2 {
 }
 header .cta button {
   border: none;
-  background-color: #CCFFCC;
+  color: #CCFFCC;
+  background-color: #14684E;
   padding: 1rem;
   border-radius: 5px;
   width: 20rem;
   font-size: 1.8rem;
 }
+@media (max-width: 450px) {
+  header .cta button {
+    color: #14684E;
+    background-color: #CCFFCC;
+  }
+}
 header .cta button:hover {
-  color: #CCFFCC;
-  background-color: #14684E;
+  color: #14684E;
+  background-color: #CCFFCC;
+}
+@media (max-width: 450px) {
+  header .cta button:hover {
+    color: #CCFFCC;
+    background-color: #14684E;
+  }
 }
 .home-page {
   display: flex;

@@ -31,15 +31,26 @@ header {
 
         button {
             border: none;
-            background-color: @sub-color;
+            color: @sub-color;
+            background-color: @main-color;            
             padding: 1rem;
             border-radius: 5px;
             width: 20rem;
             font-size: 1.8rem;
 
+            @media @phone {
+                color: @main-color;
+                background-color: @sub-color;
+            }
+
             &:hover {
-                color: @sub-color;
-                background-color: @main-color;
+                color: @main-color;
+                background-color: @sub-color;
+
+                @media @phone {
+                    color: @sub-color;
+                    background-color: @main-color;
+                }
             }
         }
     }
