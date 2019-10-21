@@ -133,13 +133,15 @@ table {
 html {
   font-size: 62.5%;
 }
-nav,
-header,
-section,
-footer {
+body {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 450px) {
+  body {
+    width: 100%;
+  }
 }
 ul {
   padding-top: 1.5vh;
@@ -186,16 +188,82 @@ nav {
   align-items: center;
   padding: 2vh 0;
 }
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 450px) {
+  nav {
+    padding-bottom: 0;
+  }
+}
 nav .logo {
   width: 200px;
 }
+@media (max-width: 800px) {
+  nav .logo {
+    width: 300px;
+  }
+}
+@media (max-width: 450px) {
+  nav .logo {
+    display: none;
+  }
+}
+nav .icon {
+  display: none;
+}
+@media (max-width: 450px) {
+  nav .icon {
+    display: inline-block;
+    width: 50px;
+    padding-bottom: 2vh;
+  }
+}
+@media (max-width: 800px) {
+  nav .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  nav .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+    border-bottom: 1px solid #14684E;
+  }
+}
 nav .nav-bar a {
   padding-left: 3vh;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+@media (max-width: 800px) {
+  nav .nav-bar a {
+    padding-left: 0;
+    padding-top: 2vh;
+  }
+}
+@media (max-width: 450px) {
+  nav .nav-bar a {
+    width: 100%;
+    padding-bottom: 2vh;
+    background-color: #CCFFCC;
+    border-top: 1px solid #14684E;
+    text-align: center;
+  }
 }
 footer {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,6 +279,21 @@ header .cta {
   background-image: url("../img/cta.png");
   background-position: right center;
   padding: 5%;
+}
+@media (max-width: 450px) {
+  header .cta {
+    height: 300px;
+  }
+}
+@media (max-width: 800px) {
+  header .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+    background-color: #14684E;
+  }
 }
 header .cta h1,
 header .cta h2 {
@@ -237,15 +320,34 @@ header .cta button:hover {
   align-items: flex-start;
   padding: 3vh 0 5vh;
 }
+@media (max-width: 800px) {
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
 .home-page .about {
   width: 48%;
 }
+@media (max-width: 800px) {
+  .home-page .about {
+    width: 100%;
+  }
+}
 .home-page .about p {
   padding-top: 1.5vh;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 .home-page .features {
   width: 48%;
+}
+@media (max-width: 800px) {
+  .home-page .features {
+    width: 100%;
+    padding-top: 2vh;
+  }
 }
 .about-page {
   padding: 3vh 0 5vh;
@@ -260,7 +362,10 @@ header .cta button:hover {
   padding-bottom: 3vh;
 }
 .about-page .how-it-works h2 {
-  padding-bottom: 2vh;
+  padding-bottom: 1.5vh;
+}
+.about-page .how-it-works p {
+  line-height: 2rem;
 }
 .about-page .about-info {
   display: flex;

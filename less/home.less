@@ -7,6 +7,16 @@ header {
         background-position: right center;
         padding: 5%;
 
+        @media @phone {
+            height: 300px;
+        }
+
+        @media @tablet {
+            .flex();
+            background-image: none;
+            background-color: @main-color;
+        }
+
         h1, h2 {
             margin-bottom: 15px;
             color: @sub-color;
@@ -33,16 +43,29 @@ header {
     .flex(row, space-between, flex-start);
     padding: 3vh 0 5vh;
 
+    @media @tablet {
+        .flex(column, center, flex-start);
+    }
+
     .about {
         width: 48%;
+
+        @media @tablet {
+            width: 100%;
+        }
         
         p {
             padding-top: 1.5vh;
-            line-height: 2rem;
+            line-height: 2.5rem;
         }
     }
 
     .features {
-        width: 48%;        
+        width: 48%;     
+        
+        @media @tablet {
+            width: 100%;
+            padding-top: 2vh;
+        }
     }
 }

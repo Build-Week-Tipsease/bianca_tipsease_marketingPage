@@ -7,8 +7,16 @@ html {
     font-size: 62.5%;
 }
 
-nav, header, section, footer {
-    .desktop-width();
+body {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    @media @phone {
+        width: 100%;
+    }
 }
 
 ul {
