@@ -391,20 +391,25 @@ header .cta button:hover {
 }
 .about-page .about-info {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
-  width: 40%;
+  flex-wrap: wrap;
+  width: 30%;
   border: 1px solid #14684E;
   border-radius: 5px;
   padding: 20px;
+  margin-bottom: 3vh;
   background-color: #CCFFCC;
 }
 @media (max-width: 800px) {
   .about-page .about-info {
     width: 100%;
-    margin-bottom: 3vh;
   }
+}
+.about-page .about-info p {
+  line-height: 2rem;
+  padding-top: 2vh;
 }
 @font-face {
   font-family: 'Open Sans';

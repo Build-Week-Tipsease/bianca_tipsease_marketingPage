@@ -22,16 +22,22 @@
     }
 
     .about-info {
-        .flex(column, flex-start, flex-start);
-        width: 40%;
+        .flex(row, space-between, flex-start);
+        flex-wrap: wrap;
+        width: 30%;
         border: 1px solid @main-color;
         border-radius: 5px;
         padding: 20px;
+        margin-bottom: 3vh;
         background-color: @sub-color;
 
         @media @tablet {
-            width: 100%;
-            margin-bottom: 3vh;
+            width: 100%;            
+        }
+
+        p {
+            line-height: 2rem;
+            padding-top: 2vh;
         }
     }
 }
