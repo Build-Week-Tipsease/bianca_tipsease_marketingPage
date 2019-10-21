@@ -133,6 +133,21 @@ table {
 html {
   font-size: 62.5%;
 }
+nav,
+header,
+section,
+footer {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ul {
+  padding-top: 1.5vh;
+  list-style-type: circle;
+  list-style-position: inside;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
 h1,
 h2,
 h3,
@@ -169,9 +184,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 2vh 0;
 }
 nav .logo {
@@ -189,69 +201,77 @@ footer {
   justify-content: center;
   align-items: center;
 }
-header {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 500px;
-  background-image: url("../img/cta.png");
-  background-position: right center;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-left;
-  align-items: center;
-}
 header .cta {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  height: 500px;
+  width: 100%;
+  background-image: url("../img/cta.png");
+  background-position: right center;
   padding: 5%;
 }
 header .cta h1,
 header .cta h2 {
   margin-bottom: 15px;
-  color: white;
+  color: #CCFFCC;
   text-transform: lowercase;
 }
 header .cta button {
   border: none;
-  background-color: white;
+  background-color: #CCFFCC;
   padding: 1rem;
   border-radius: 5px;
   width: 20rem;
   font-size: 1.8rem;
 }
 header .cta button:hover {
-  color: white;
+  color: #CCFFCC;
   background-color: #14684E;
 }
-section {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
+.home-page {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   padding: 3vh 0 5vh;
 }
-section .about {
+.home-page .about {
   width: 48%;
 }
-section .about p {
+.home-page .about p {
   padding-top: 1.5vh;
   line-height: 2rem;
 }
-section .features {
+.home-page .features {
   width: 48%;
 }
-section .features ul {
-  padding-top: 1.5vh;
-  list-style-type: circle;
-  list-style-position: inside;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
+.about-page {
+  padding: 3vh 0 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.about-page .how-it-works {
+  width: 100%;
+  padding-bottom: 3vh;
+}
+.about-page .how-it-works h2 {
+  padding-bottom: 2vh;
+}
+.about-page .about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+  border: 1px solid #14684E;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #CCFFCC;
 }
 @font-face {
   font-family: 'Open Sans';

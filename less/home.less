@@ -1,12 +1,10 @@
-header {
-    .desktop-width();
-    height: 500px;
-    background-image: url("../img/cta.png");
-    background-position: right center;
-    .flex(row, flex-left, center);
-
+header {    
     .cta {
-        .flex();
+        .flex(column, center, flex-start);
+        height: 500px;
+        width: 100%;
+        background-image: url("../img/cta.png");
+        background-position: right center;
         padding: 5%;
 
         h1, h2 {
@@ -31,8 +29,7 @@ header {
     }
 }
 
-section {
-    .desktop-width();
+.home-page {
     .flex(row, space-between, flex-start);
     padding: 3vh 0 5vh;
 
@@ -46,14 +43,6 @@ section {
     }
 
     .features {
-        width: 48%;
-
-        ul {
-            padding-top: 1.5vh;
-            list-style-type: circle;
-            list-style-position: inside;
-            font-size: 1.8rem;
-            line-height: 2.5rem;
-        }
+        width: 48%;        
     }
 }
