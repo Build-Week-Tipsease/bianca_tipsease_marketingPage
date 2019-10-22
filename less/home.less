@@ -47,6 +47,7 @@ header {
             &:hover {
                 color: @main-color;
                 background-color: @sub-color;
+                cursor: pointer;
 
                 @media @phone {
                     color: @sub-color;
@@ -58,7 +59,7 @@ header {
 }
 
 .home-page {
-    .flex(row, space-between, flex-start);
+    .flex(row, space-around, flex-start);
     padding: 3vh 0 5vh;
 
     @media @tablet {
@@ -71,7 +72,7 @@ header {
     }
 
     .about {
-        width: 48%;
+        width: 45%;
 
         @media @tablet {
             width: 100%;
@@ -84,7 +85,7 @@ header {
     }
 
     .features {
-        width: 48%;     
+        width: 45%;     
         
         @media @tablet {
             width: 100%;

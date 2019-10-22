@@ -335,6 +335,7 @@ header .cta button {
 header .cta button:hover {
   color: #14684E;
   background-color: #CCFFCC;
+  cursor: pointer;
 }
 @media (max-width: 450px) {
   header .cta button:hover {
@@ -345,7 +346,7 @@ header .cta button:hover {
 .home-page {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   padding: 3vh 0 5vh;
 }
@@ -364,7 +365,7 @@ header .cta button:hover {
   }
 }
 .home-page .about {
-  width: 48%;
+  width: 45%;
 }
 @media (max-width: 800px) {
   .home-page .about {
@@ -376,7 +377,7 @@ header .cta button:hover {
   line-height: 2.5rem;
 }
 .home-page .features {
-  width: 48%;
+  width: 45%;
 }
 @media (max-width: 800px) {
   .home-page .features {
