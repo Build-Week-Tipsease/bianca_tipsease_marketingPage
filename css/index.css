@@ -310,6 +310,7 @@ header .cta h2 {
   margin-bottom: 15px;
   color: #CCFFCC;
   text-transform: lowercase;
+  text-shadow: 2px 2px #14684E;
 }
 @media (max-width: 350px) {
   header .cta h1 {
