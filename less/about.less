@@ -33,39 +33,28 @@ header {
     }
 
     .boxes {
-        .flex(row, space-around, flex-start);
+        .flex(row, space-between, flex-start);
         flex-wrap: wrap;
-        background-color: @sub-color;
         padding-top: 3vh;
     }
 
     .about-info {
         .flex(row, space-between, flex-start);
-        flex-wrap: wrap;
-        width: 30%;
+        width: 48%;
         border: 1px solid @main-color;
         border-radius: 5px;
         padding: 20px;
         margin-bottom: 3vh;
         background-color: white;
 
-        @media @small-desktop {
-            width: 45%;            
-        }
+        // @media @small-desktop {
+        //     width: 90%;            
+        // }
 
         @media @tablet{
             width: 90%;
-        }
-
-        h3 {
-            @media @tablet {
-                font-size: 2rem;            
-            }
-        }
-        
-        h4 {
-            padding: 2vh 0 0;
-            width: 100%;
+            flex-wrap: wrap;
+            margin: 0 auto 3vh;
         }
 
         p {
@@ -73,9 +62,58 @@ header {
             padding-top: 2vh;
         }
 
-        .contact-links {
-            p {
-                padding-left: 10px;
+        .description {
+            width: 55%;
+
+            @media @tablet{
+                width: 100%;
+            }
+
+            h3 {
+                @media @tablet {
+                    font-size: 2rem;            
+                }
+            }  
+        }
+        
+        .profile {
+            width: 40%;
+            .flex(column, flex-start, flex-start);
+
+            @media @tablet{
+                width: 100%;
+                padding-top: 2vh;
+                flex-direction: row;
+            }
+
+            @media @small-tablet{
+                flex-direction: column;
+            }
+
+            img {
+                width: 300px;
+            }
+
+            .contact-links{
+                h4 {
+                    padding: 2vh 0 0;
+
+                    @media @tablet {
+                        padding: 0;
+                    }
+
+                    @media @small-tablet {
+                        padding: 2vh 0 0;
+                    }
+                }
+
+                i {
+                    margin-right: 5px;
+                }
+
+                @media @tablet{
+                    padding-left: 30px;
+                }
             }
         }
     }
