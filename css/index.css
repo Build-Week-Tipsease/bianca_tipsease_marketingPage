@@ -180,11 +180,11 @@ address {
   color: #0c1d09;
 }
 a {
-  color: #14684E;
+  color: #38af78;
   text-decoration: none;
 }
 a:hover {
-  color: #0c1d09;
+  color: #14684E;
 }
 nav {
   display: flex;
