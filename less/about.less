@@ -33,25 +33,25 @@ header {
     }
 
     .boxes {
-        .flex(row, space-between, flex-start);
+        .flex(row, space-between, stretch);
         flex-wrap: wrap;
         padding-top: 3vh;
     }
 
     .about-info {
-        .flex(row, space-between, flex-start);
-        width: 48%;
+        .flex(column, flex-start, center);
+        width: 30%;
         border: 1px solid @main-color;
         border-radius: 5px;
         padding: 20px;
         margin-bottom: 3vh;
-        background-color: white;
+        background-color: white;        
 
-        // @media @small-desktop {
-        //     width: 90%;            
-        // }
+        @media @small-desktop {
+            width: 45%;            
+        }
 
-        @media @tablet{
+        @media @small-tablet{
             width: 90%;
             flex-wrap: wrap;
             margin: 0 auto 3vh;
@@ -63,13 +63,16 @@ header {
         }
 
         .description {
-            width: 55%;
+            text-align: center;
+            padding-bottom: 1.5vh;
 
             @media @tablet{
                 width: 100%;
             }
 
             h3 {
+                padding-bottom: 1vh;
+
                 @media @tablet {
                     font-size: 2rem;            
                 }
@@ -77,21 +80,21 @@ header {
         }
         
         .profile {
-            width: 40%;
-            .flex(column, flex-start, flex-start);
+            .flex();
 
-            @media @tablet{
-                width: 100%;
-                padding-top: 2vh;
-                flex-direction: row;
-            }
+            // @media @tablet{
+            //     width: 100%;
+            //     padding-top: 2vh;
+            //     flex-direction: row;
+            // }
 
-            @media @small-tablet{
-                flex-direction: column;
-            }
+            // @media @small-tablet{
+            //     flex-direction: column;
+            // }
 
             img {
-                width: 300px;
+                width: 500px;
+                max-width: 100%;
             }
 
             .contact-links{
@@ -111,9 +114,9 @@ header {
                     margin-right: 5px;
                 }
 
-                @media @tablet{
-                    padding-left: 30px;
-                }
+                // @media @tablet{
+                //     padding-left: 30px;
+                // }
             }
         }
     }
