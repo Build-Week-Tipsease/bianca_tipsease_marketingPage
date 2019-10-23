@@ -421,7 +421,7 @@ header .cta button:hover {
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  padding-top: 3vh;
+  padding-top: 1vh;
 }
 .about-page .about-info {
   display: flex;
