@@ -279,6 +279,9 @@ footer {
 footer p {
   color: #d3e8d0;
 }
+footer a:hover {
+  color: #d3e8d0;
+}
 header .cta {
   display: flex;
   flex-direction: column;
