@@ -4,7 +4,7 @@ header {
             display: none;
         }
     }
-}
+} // header
 
 .about-page {
     padding: 3vh 0 5vh;    
@@ -30,13 +30,12 @@ header {
             margin: 0 auto;
             padding: 1vh 0 3vh;
         }
-    }
+    } // about us desc
 
     .boxes {
         .flex(row, space-between, stretch);
-        flex-wrap: wrap;
         padding-top: 1vh;
-    }
+    } // box container
 
     .about-info {
         .flex(column, flex-start, center);
@@ -53,7 +52,6 @@ header {
 
         @media @small-tablet{
             width: 90%;
-            flex-wrap: wrap;
             margin: 0 auto 3vh;
         }
 
@@ -76,21 +74,11 @@ header {
                 @media @tablet {
                     font-size: 2rem;            
                 }
-            }  
-        }
+            }  // name
+        } // name and title
         
         .profile {
             .flex();
-
-            // @media @tablet{
-            //     width: 100%;
-            //     padding-top: 2vh;
-            //     flex-direction: row;
-            // }
-
-            // @media @small-tablet{
-            //     flex-direction: column;
-            // }
 
             img {
                 width: 500px;
@@ -98,26 +86,10 @@ header {
             }
 
             .contact-links{
-                h4 {
-                    padding: 2vh 0 0;
-
-                    @media @tablet {
-                        padding: 0;
-                    }
-
-                    @media @small-tablet {
-                        padding: 2vh 0 0;
-                    }
-                }
-
                 i {
                     margin-right: 5px;
-                }
-
-                // @media @tablet{
-                //     padding-left: 30px;
-                // }
-            }
-        }
-    }
-}
+                } // social icons
+            } // contact links
+        } // profile image and links
+    } // profile containers
+} // about page content
