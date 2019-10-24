@@ -132,13 +132,17 @@ table {
 }
 html {
   font-size: 62.5%;
+  background-color: #d3e8d0;
 }
 body {
   width: 80%;
+  position: relative;
   max-width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
+  background-color: white;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   body {
     width: 100%;
   }
@@ -192,7 +196,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2vh 0;
+  padding: 2vh 10px;
 }
 @media (max-width: 800px) {
   nav {
@@ -205,7 +209,7 @@ nav {
 }
 @media (max-width: 500px) {
   nav {
-    padding-bottom: 0;
+    padding: 2vh 0 0;
   }
 }
 nav .logo {
@@ -273,18 +277,26 @@ nav .nav-bar a {
   }
 }
 footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+footer .f-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
   background-color: #14684E;
-  padding: 2vh 0;
+  padding: 2vh 0 2vh 10px;
 }
-footer p {
+footer .f-container p {
   color: #d3e8d0;
+  line-height: 3vh;
+  padding-right: 10px;
 }
-footer a:hover {
+footer .f-container a:hover {
   color: #d3e8d0;
 }
 header .cta {
@@ -359,7 +371,7 @@ header .cta button:hover {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 3vh 0 5vh;
+  padding: 3vh 10px 10vh;
 }
 @media (max-width: 800px) {
   .home-page {
@@ -374,6 +386,7 @@ header .cta button:hover {
   .home-page {
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 13vh;
   }
 }
 .home-page .about {
@@ -403,11 +416,11 @@ header .cta button:hover {
   }
 }
 .about-page {
-  padding: 3vh 0 5vh;
+  padding: 3vh 30px 10vh;
 }
 @media (max-width: 500px) {
   .about-page {
-    padding: 0 0 5vh;
+    padding: 0 0 13vh;
   }
 }
 .about-page .about-us {
@@ -442,7 +455,7 @@ header .cta button:hover {
   align-items: center;
   flex-wrap: wrap;
   width: 30%;
-  border: 1px solid #14684E;
+  border: 1px solid #d3e8d0;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 3vh;
@@ -490,6 +503,7 @@ header .cta button:hover {
 .about-page .about-info .profile img {
   width: 500px;
   max-width: 100%;
+  border-radius: 5px;
 }
 .about-page .about-info .profile .contact-links i {
   margin-right: 5px;

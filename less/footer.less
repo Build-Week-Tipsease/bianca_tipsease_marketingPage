@@ -1,15 +1,24 @@
 footer {
-    .flex();
-    background-color: @main-color;
-    padding: 2vh 0;
-    
-    p {
-        color: @sub-color;
-    }
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 
-    a {
-        &:hover {
+    .f-container {
+        .flex(row, center, center);
+        width: 100%;
+        background-color: @main-color;
+        padding: 2vh 0 2vh 10px;
+        
+        p {
             color: @sub-color;
+            line-height: 3vh;
+            padding-right: 10px;
+        }
+
+        a {
+            &:hover {
+                color: @sub-color;
+            }
         }
     }
 }
