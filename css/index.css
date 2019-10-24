@@ -191,6 +191,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 2vh 0;
 }
 @media (max-width: 800px) {
@@ -199,6 +200,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 500px) {
@@ -235,6 +237,7 @@ nav .icon {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
   }
 }
@@ -244,6 +247,7 @@ nav .icon {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 2vh;
     border-bottom: 1px solid #14684E;
   }
@@ -273,6 +277,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #14684E;
   padding: 2vh 0;
 }
@@ -287,6 +292,7 @@ header .cta {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
   height: 500px;
   width: 100%;
   background-image: url("../img/cta.jpg");
@@ -299,6 +305,7 @@ header .cta {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 500px) {
@@ -351,6 +358,7 @@ header .cta button:hover {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 3vh 0 5vh;
 }
 @media (max-width: 800px) {
@@ -359,6 +367,7 @@ header .cta button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 500px) {
@@ -431,6 +440,7 @@ header .cta button:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   width: 30%;
   border: 1px solid #14684E;
   border-radius: 5px;
@@ -446,7 +456,6 @@ header .cta button:hover {
 @media (max-width: 600px) {
   .about-page .about-info {
     width: 90%;
-    flex-wrap: wrap;
     margin: 0 auto 3vh;
   }
 }
@@ -476,23 +485,11 @@ header .cta button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .about-page .about-info .profile img {
   width: 500px;
   max-width: 100%;
-}
-.about-page .about-info .profile .contact-links h4 {
-  padding: 2vh 0 0;
-}
-@media (max-width: 800px) {
-  .about-page .about-info .profile .contact-links h4 {
-    padding: 0;
-  }
-}
-@media (max-width: 600px) {
-  .about-page .about-info .profile .contact-links h4 {
-    padding: 2vh 0 0;
-  }
 }
 .about-page .about-info .profile .contact-links i {
   margin-right: 5px;
